@@ -15,9 +15,8 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
-
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -85,22 +84,17 @@
       </div>
     </section>
     <audio preload="auto" id="mario-dies-audio"> 
-        <source src="audio/smb_mariodie.wav"></source>
-        <source src="audio/smb_gameover.wav"></source>        
+        <source src="https://s3.amazonaws.com/mariobrawlfiles/smb_mariodie.wav"></source>
     </audio>
     <audio preload="auto" id="luigi-wins-audio">
-        <source src="audio/smb_gameover.wav"></source>        
+        <source src="https://s3.amazonaws.com/mariobrawlfiles/smb_gameover.wav"></source>        
     </audio>
     <audio preload="auto" id="itstime-audio">
-        <source src="audio/its_time.mp3"></source>      
+        <source src="https://s3.amazonaws.com/mariobrawlfiles/its_time.mp3"></source>      
     </audio>
     <audio preload="auto" id="wearelive-audio">
-        <source src="audio/we_are_live.mp3"></source>
+        <source src="https://s3.amazonaws.com/mariobrawlfiles/we_are_live.mp3"></source>
     </audio>          
-
-
-<!--     <div id="background">
-    </div>  -->
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -108,8 +102,8 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
