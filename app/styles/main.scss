@@ -1,0 +1,88 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+@import 'images';
+@import 'intro';
+
+// Custom Styles
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+body {
+  background: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+.top {
+  @include outer-container;
+  margin-top: 75px;
+  .playas { @include span-columns(6);
+      
+      // margin: 5px, 5px, 5px, 5px;
+      // background-image: url(../images/overworld_bg.png);
+    .playa-images {
+      padding-left: 25px;
+      height: 30em;
+      left: 50%;
+      // border: 1px solid black;
+    }
+    .mario-health {
+      font-size: 5em;
+      color: green;
+      text-align: center;
+      border: 1px solid black;
+      background-color: #839096;
+    }  
+    .luigi-health {
+      font-size: 5em;
+      color: green;
+      text-align: center;
+      border: 1px solid black;
+      background-color: #839096;
+    }
+    .healthBox {
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    #luigi-meter {
+    }       
+  }
+}
+.sec2{
+  @include outer-container;
+  margin-top: 25px;
+  margin-bottom: 75px;
+  #fight {
+    @include span-columns(2);
+    @include shift(5);
+    text-align: center;
+    color: white;
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 10.5px 21px;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    border-radius: 29px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  }
+}
+.console-line
+{
+    font-family: monospace;
+    margin: 2px;
+}

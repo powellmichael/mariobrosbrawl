@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Mario Bros Brawl</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <section id="intro1">
+      <div class="hero-unit">
+        <div class="hero-inner">
+          <h1>Mario Bros Brawl</h1>
+          <img class="mario-luigi-intro" src="images/mario_luigi_pose.jpg">
+        </div>
+      </div>
+    </section>
+    <section id="intro-luigi">
+      <div class="luigi-challenge">
+        <img class="luigi-intro" src="images/luigi-intro.jpg">        
+      </div>
+      <div class="luigi-text">
+        <h1>I've spent my whole life in Mario's shadow. It's time he gets the beatdown he deserves.<br>
+        Punks jump up to get beat down!</h1>
+      </div>
+    </section>
+    <section id="intro-mario">
+      <div class="mario-challenge">
+        <img class="mario-intro" src="images/fire_mario.png">        
+      </div>
+      <div class="mario-text">
+        <h1>Don't bite the hand that<br> feeds you Luigi.<br>It's my name on all <br>the video games.<br>
+        Stay in your lane and know your role.</h1>
+      </div>
+    </section>        
+    <section class="top">
+      <div class="playas">
+        <div class="playa-images">
+        <img class="mario" src="images/mario_front_pose1.jpg">
+        </div>
+        <div class="mario-health">
+          <input class ="healthBox" type="text" value="100" />
+          <div id="mario-meter">**********</div>
+        </div>
+      </div>
+      <div class ="playas">
+        <div class="playa-images">
+        <img class="luigi" src="images/luigi_side_pose.jpg">
+        </div>
+        <div class="luigi-health">
+          <input class ="healthBox" type="text" value="100" />
+          <div id="luigi-meter">**********</div>
+        </div>  
+      </div>     
+    </section> 
+    <div class="sec2">
+        <div class="button">
+        <button id="fight">Let's Fight</button>
+        </div>
+    </div>
+    <section class="mario-wins">
+      <div class="gmario">
+        <img class="gold-mario" src="images/gold_mario.jpg">
+      </div>
+    </section>
+    <section class="luigi-wins">
+      <div class="luigi-win-inner">
+        <img class="luigi-win-final" src="images/luigi_yoshi.png">        
+      </div>
+    </section>
+    <audio preload="auto" id="mario-dies-audio"> 
+        <source src="audio/smb_mariodie.wav"></source>
+        <source src="audio/smb_gameover.wav"></source>        
+    </audio>
+    <audio preload="auto" id="luigi-wins-audio">
+        <source src="audio/smb_gameover.wav"></source>        
+    </audio>
+    <audio preload="auto" id="itstime-audio">
+        <source src="audio/its_time.mp3"></source>      
+    </audio>
+    <audio preload="auto" id="wearelive-audio">
+        <source src="audio/we_are_live.mp3"></source>
+    </audio>          
+
+
+<!--     <div id="background">
+    </div>  -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

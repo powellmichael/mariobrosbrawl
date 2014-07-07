@@ -1,0 +1,60 @@
+.mario {
+	display: block;
+  width: auto;
+  height: 100%;
+  // padding-left: 150px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
+}
+.luigi {
+	display: block;
+  width: auto;
+  height: 100%;
+}
+.l75 {
+  width: auto;
+  height: 75%;
+}
+.gold-mario{
+	display: block;
+  width: auto;
+  height: 100%;
+}
+
+.mario-wins{
+  @include outer-container;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  .gmario {
+    @include span-columns(6);
+    // @include shift(3);
+    height: 30em;
+    // display: none;
+  }
+}
+// .luigi-wins{
+//   @include outer-container;
+//   margin-top: 75px;
+//   margin-bottom: 75px;
+//   .lwins {
+//     @include span-columns(6);
+//     // @include shift(3);
+//     height: 30em;
+//     // display: none;
+//   }
+// }
+.luigi-wins {
+	@include outer-container;
+	  .luigi-win-inner {
+	  	@include span-columns(6);
+	  	@include shift(3);
+	  	height: 40em;
+      left: 50%;
+	    .luigi-win-final {
+	      display: block;
+	      padding-left: 30px;
+        width: auto;
+        height: 100%;
+	    }	
+	  }
+}
